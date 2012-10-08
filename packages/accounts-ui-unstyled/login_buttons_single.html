@@ -1,0 +1,12 @@
+<template name="loginButtonsLoggedOutSingleLoginButton">
+  <div class="login-button {{#unless configured}}configure-button{{/unless}}"
+       id="login-buttons-{{name}}">
+    {{#if configured}}
+      <div class="login-image" id="login-buttons-image-{{name}}"></div>
+      <span class="sign-in-text-{{name}}">Sign in with {{capitalizedName}}</span>
+    {{else}}
+      <div class="login-image" id="login-buttons-image-{{name}}"></div>
+      <span class="configure-text-{{name}}">Configure {{capitalizedName}} Login</span>
+    {{/if}}
+  </div>
+</template>
